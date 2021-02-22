@@ -16,6 +16,7 @@ import argparse
 import subprocess
 
 import cv2
+import numpy as np
 
 WINDOW_NAME = 'CameraDemo'
 
@@ -63,7 +64,9 @@ def read_cam(cap):
             # Check to see if the user has closed the window
             # If yes, terminate the program
             break
-        _, img = cap.read() # grab the next image frame from camera
+        _, imgL = cap[0].read() # grab the next image frame from camera
+        _, imgR = cap[1].read() # grab the next image frame from camera
+        img = np.concatenate((imgL,imgR),1)
         if show_help:
             cv2.putText(img, help_text, (11, 20), font,
                         1.0, (32, 32, 32), 4, cv2.LINE_AA)
@@ -88,17 +91,17 @@ def read_cam(cap):
 def main():
     print('OpenCV version: {}'.format(cv2.__version__))
 
-    cap_left = open_cam_onboard(0,960, 1080)
-    cap_right = open_cam_onboard(1,960, 1080)
+    cap = []
 
-    open_window(960, 1080)
-    read_cam(cap_left)
-    open_window(960, 1080)
-    read_cam(cap_right)
+    cap.append(open_cam_onboard(0,960, 1080))
+    cap.append(open_cam_onboard(1,960, 1080))
+
+    open_window(1920, 1080)
+    read_cam(cap)
 
 
-    cap_left.release()
-    cap_right.release()
+    cap[0].release()
+    cap[1].release()
     cv2.destroyAllWindows()
 
 
