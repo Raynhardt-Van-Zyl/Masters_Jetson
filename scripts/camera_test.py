@@ -66,6 +66,8 @@ def read_cam(cap):
             break
         _, imgL = cap[0].read() # grab the next image frame from camera
         _, imgR = cap[1].read() # grab the next image frame from camera
+        print(imgL)
+        print(imgR)
         img = np.concatenate((imgL,imgR),1)
         if show_help:
             cv2.putText(img, help_text, (11, 20), font,
