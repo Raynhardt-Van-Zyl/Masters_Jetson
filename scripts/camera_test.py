@@ -19,18 +19,19 @@ import cv2
 
 WINDOW_NAME = 'CameraDemo'
 
-def open_cam_onboard(width, height):
+def open_cam_onboard(camera_id, width, height):
     gst_elements = str(subprocess.check_output('gst-inspect-1.0'))
     if 'nvcamerasrc' in gst_elements:
         # On versions of L4T prior to 28.1, add 'flip-method=2' into gst_str
         gst_str = ('nvcamerasrc ! '
+                   'sensor-id={}'
                    'video/x-raw(memory:NVMM), '
                    'width=(int)2592, height=(int)1458, '
                    'format=(string)I420, framerate=(fraction)30/1 ! '
                    'nvvidconv ! '
                    'video/x-raw, width=(int){}, height=(int){}, '
                    'format=(string)BGRx ! '
-                   'videoconvert ! appsink').format(width, height)
+                   'videoconvert ! appsink').format(camera_id,width, height)
     elif 'nvarguscamerasrc' in gst_elements:
         gst_str = ('nvarguscamerasrc ! '
                    'video/x-raw(memory:NVMM), '
@@ -49,7 +50,7 @@ def open_window(width, height):
     cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(WINDOW_NAME, width, height)
     cv2.moveWindow(WINDOW_NAME, 0, 0)
-    cv2.setWindowTitle(WINDOW_NAME, 'Camera Demo for Jetson TX2/TX1')
+    cv2.setWindowTitle(WINDOW_NAME, 'Camera Demo')
 
 
 def read_cam(cap):
@@ -87,15 +88,17 @@ def read_cam(cap):
 def main():
     print('OpenCV version: {}'.format(cv2.__version__))
 
-    cap = open_cam_onboard(1920, 1080)
+    cap_left = open_cam_onboard(0,960, 1080)
+    cap_right = open_cam_onboard(1,960, 1080)
 
-    if not cap.isOpened():
-        sys.exit('Failed to open camera!')
+    open_window(960, 1080)
+    read_cam(cap_left)
+    open_window(960, 1080)
+    read_cam(cap_right)
 
-    open_window(1920, 1080)
-    read_cam(cap)
 
-    cap.release()
+    cap_left.release()
+    cap_right.release()
     cv2.destroyAllWindows()
 
 
