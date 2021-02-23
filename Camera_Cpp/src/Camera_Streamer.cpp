@@ -4,14 +4,10 @@
   https://gist.github.com/peter-moran/742998d893cd013edf6d0c86cc86ff7f
 */
 
-#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string.h>
-#include "opencv2/core/core.hpp"
-#include "opencv2/videoio/videoio.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/video.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
+#include <Argus/Argus.h>
+#include "Thread.h"
 
 std::string get_tegra_pipeline(int width, int height, int fps) {
     return "nvarguscamerasrc ! nvvidconv flip-method=2 ! video/x-raw(memory:NVMM), width=1280, height=720,format=NV12, framerate=120/1 ! nvvidconv ! video/x-raw,format=I420 ! appsink";
