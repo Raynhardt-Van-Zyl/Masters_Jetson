@@ -5,6 +5,13 @@
 */
 
 #include <opencv2/opencv.hpp>
+#include <iostream>
+#include <string.h>
+#include "opencv2/core/core.hpp"
+#include "opencv2/videoio/videoio.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/video.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 
 std::string get_tegra_pipeline(int width, int height, int fps) {
     return "nvcamerasrc ! video/x-raw(memory:NVMM), width=(int)" + std::to_string(width) + ", height=(int)" +
