@@ -44,7 +44,7 @@ include_directories(
     ${ARGUS_INCLUDE_DIR}
     ${EGL_INCLUDE_DIR}
     ${OPENGLES_INCLUDE_DIR}
-    ${CMAKE_SOURCE_DIR}/samples/utils
+    ${CMAKE_SOURCE_DIR}/libs/utils
     )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -52,7 +52,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME}
     ${ARGUS_LIBRARIES}
     ${OPENGLES_LIBRARIES}
-    argussampleutils
+    /libs/utils
     )
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
