@@ -37,7 +37,7 @@ find_package(OpenGLES REQUIRED)
 find_package(EGL REQUIRED)
 
 set(SOURCES
-    Camera_Streamer.cpp
+    main.cpp
     )
 
 include_directories(
@@ -52,7 +52,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME}
     ${ARGUS_LIBRARIES}
     ${OPENGLES_LIBRARIES}
-    argus
+    argussampleutils
     )
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
