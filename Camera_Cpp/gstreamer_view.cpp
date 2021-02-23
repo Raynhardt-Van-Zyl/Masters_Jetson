@@ -14,7 +14,7 @@
 #include "opencv2/imgproc/imgproc.hpp"
 
 std::string get_tegra_pipeline(int width, int height, int fps) {
-    return "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=1280, height=720,format=NV12, framerate=30/1 ! nvvidconv ! video/x-raw,format=I420 ! appsink";
+    return "nvarguscamerasrc ! nvvidconv flip-method=1 ! video/x-raw(memory:NVMM), width=1280, height=720,format=NV12, framerate=30/1 ! nvvidconv ! video/x-raw,format=I420 ! appsink";
 }
 
 int main() {
