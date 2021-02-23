@@ -14,16 +14,14 @@
 #include "opencv2/imgproc/imgproc.hpp"
 
 std::string get_tegra_pipeline(int width, int height, int fps) {
-    return "nvcamerasrc ! video/x-raw(memory:NVMM), width=" + std::to_string(width) + ", height=" +
-           std::to_string(height) + ", format=(string)I420, framerate=(fraction)" + std::to_string(fps) +
-           "/1 ! nvvidconv flip-method=2 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink";
+    return "gst-launch-1.0 nvarguscamerasrc sensor-id=0 ! 'video/x-raw(memory:NVMM), width=1920, height=1080, format=(string)NV12, framerate=(fraction)20/1' ! nvoverlaysink -e";
 }
 
 int main() {
     // Options
     int WIDTH = 1920;
     int HEIGHT = 1080;
-    int FPS = 30;
+    int FPS = 20;
 
     // Define the gstream pipeline
     std::string pipeline = get_tegra_pipeline(WIDTH, HEIGHT, FPS);
