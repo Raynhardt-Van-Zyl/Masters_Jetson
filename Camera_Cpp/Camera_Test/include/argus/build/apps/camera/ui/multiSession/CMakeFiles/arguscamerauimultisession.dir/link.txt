@@ -1,2 +1,0 @@
-/usr/bin/ar qc libarguscamerauimultisession.a  CMakeFiles/arguscamerauimultisession.dir/AppModuleMultiSession.cpp.o
-/usr/bin/ranlib libarguscamerauimultisession.a

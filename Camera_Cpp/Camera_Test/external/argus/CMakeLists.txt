@@ -1,4 +1,4 @@
-# Copyright (c) 2016, NVIDIA CORPORATION. All rights reserved.
+# Copyright (c) 2016-2018, NVIDIA CORPORATION. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -26,38 +26,6 @@
 
 cmake_minimum_required (VERSION 2.6)
 
-project(Camera_Test)
-
-add_subdirectory(external/argus)
-
-target_include_directories(${PROJECT_NAME} 
-    PUBLIC external/argus/include
-)
-
-target_link_directories(${PROJECT_NAME} 
-    PRIVATE external/argus/src
-)
-
-target_link_libraries(${PROJECT_NAME}
-    argus    
-)
-
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" "${CMAKE_MODULE_PATH}")
-
-set(SOURCES
-    main.cpp
-    )
-
-include_directories(
-    ${CMAKE_SOURCE_DIR}include/argus/samples/utils
-    )
-
-add_executable(${PROJECT_NAME} ${SOURCES})
-
-target_link_libraries(${PROJECT_NAME}
-	Argus
-    )
-
-install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+add_subdirectory(samples/utils)
 
 include(CPack)

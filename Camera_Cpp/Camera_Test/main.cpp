@@ -83,7 +83,6 @@ int main(int argc, char** argv)
     { 
         ORIGINATE_ERROR("Preview Sensor Mode %d not available"); 
     }
-    std::cout << sensormodes.size();
     ISensorMode *iSensorMode = interface_cast<ISensorMode>(sensormodes[0]); 
     if (!iSensorMode){
         ORIGINATE_ERROR("Failed to get SensorMode interface");
