@@ -35,7 +35,7 @@ set(SOURCES
     )
 
 include_directories(
-
+    ${CMAKE_SOURCE_DIR}include/argus/samples/utils
     )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
