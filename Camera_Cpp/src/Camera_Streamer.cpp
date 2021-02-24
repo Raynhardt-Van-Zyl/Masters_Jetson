@@ -105,8 +105,8 @@ int main() {
         ORIGINATE_ERROR("Failed to submit capture request");
     
 
-    Status status; U
-    niqueObj<Frame> frame(iFrameConsumer-> acquireFrame(FIVE_SECONDS_IN_NANOSECONDS, &status));
+    Status status; 
+    UniqueObj<Frame> frame(iFrameConsumer-> acquireFrame(FIVE_SECONDS_IN_NANOSECONDS, &status));
 
 
     IFrame *iFrame = interface_cast< IFrame>(frame); 

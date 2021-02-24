@@ -26,32 +26,25 @@
 
 cmake_minimum_required (VERSION 3.16)
 
-project(Camera_Streamer VERSION 1.0)
+project(Camera_Streamer)
 
 # cmake -DCMAKE_BUILD_TYPE=Debug ../../ for debug magic
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" "${CMAKE_MODULE_PATH}")
 
-find_package(Argus REQUIRED)
-find_package(OpenGLES REQUIRED)
-find_package(EGL REQUIRED)
-
 set(SOURCES
-    main.cpp
+    src/Camera_Streamer.cpp
     )
 
+LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/libs/utils)
+
 include_directories(
-    ${ARGUS_INCLUDE_DIR}
-    ${EGL_INCLUDE_DIR}
-    ${OPENGLES_INCLUDE_DIR}
     ${CMAKE_SOURCE_DIR}/libs/utils
     )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME}
-    ${ARGUS_LIBRARIES}
-    ${OPENGLES_LIBRARIES}
     /libs/utils
     )
 
