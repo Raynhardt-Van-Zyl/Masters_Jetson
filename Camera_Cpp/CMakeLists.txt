@@ -31,21 +31,46 @@ project(Camera_Streamer)
 # cmake -DCMAKE_BUILD_TYPE=Debug ../../ for debug magic
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" "${CMAKE_MODULE_PATH}")
+set(CMAKE_C_FLAGS "-std=c++11")
+
+find_package(Argus REQUIRED)
 
 set(SOURCES
     src/Camera_Streamer.cpp
     )
 
-LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/libs/utils)
-
 include_directories(
+    ${ARGUS_INCLUDE_DIR}
+    ${EGL_INCLUDE_DIR}
+    ${OPENGLES_INCLUDE_DIR}
     ${CMAKE_SOURCE_DIR}/libs/utils
+    /libs/include/
     )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
+link_directories(
+    ${GTK3_LIBRARY_DIRS}
+    /usr/lib/aarch64-linux-gnu/tegra 
+    /usr/local/cuda-8.0/lib64
+    )
+
+# Begin of gstreamer
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
+include_directories(${GSTREAMER_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} ${GSTREAMER_LIBRARIES})
+
+pkg_check_modules(GLIB REQUIRED glib-2.0)
+include_directories(${GLIB_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} ${GLIB_LIBRARIES})
+# End of gstreamer
+
+add_library(libnvbuf_utils.so SHARED IMPORTED)
 target_link_libraries(${PROJECT_NAME}
-    /libs/utils
+    ${ARGUS_LIBRARIES}
+    argussampleutils
     )
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

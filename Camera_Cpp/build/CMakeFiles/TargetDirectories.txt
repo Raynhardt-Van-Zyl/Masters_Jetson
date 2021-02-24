@@ -1,9 +1,0 @@
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/install/strip.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/install/local.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/edit_cache.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/package_source.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/install.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/list_install_components.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/rebuild_cache.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/package.dir
-/home/raynhardt/Documents/Jetson/Masters_Jetson/Camera_Cpp/build/CMakeFiles/Camera_Streamer.dir
