@@ -26,6 +26,6 @@
 
 cmake_minimum_required (VERSION 2.6)
 
-add_subdirectory(samples/utils)
+add_subdirectory(Library)
 
 include(CPack)

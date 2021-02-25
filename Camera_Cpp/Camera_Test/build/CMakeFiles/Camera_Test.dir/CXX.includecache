@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../external/argus/library/ArgusHelpers.h
+Argus/Argus.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/main.cpp
+library/ArgusHelpers.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/library/ArgusHelpers.h
+CommonOptions.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/CommonOptions.h
+Error.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/Error.h
+EGLGlobal.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/EGLGlobal.h
+GLContext.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/GLContext.h
+JPEGConsumer.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/JPEGConsumer.h
+PreviewConsumer.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/PreviewConsumer.h
+Window.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/Window.h
+Thread.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/Thread.h
+Argus/Argus.h
+-
+unistd.h
+-
+stdlib.h
+-
+sstream
+-
+iomanip
+-
+chrono
+-
+

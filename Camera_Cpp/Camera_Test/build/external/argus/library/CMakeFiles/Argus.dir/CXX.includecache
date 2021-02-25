@@ -1,0 +1,212 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../external/argus/include/Argus/Argus.h
+stddef.h
+-
+Argus/UUID.h
+../external/argus/include/Argus/Argus/UUID.h
+Argus/Types.h
+../external/argus/include/Argus/Argus/Types.h
+Argus/Stream.h
+../external/argus/include/Argus/Argus/Stream.h
+Argus/BufferStream.h
+../external/argus/include/Argus/Argus/BufferStream.h
+Argus/CameraDevice.h
+../external/argus/include/Argus/Argus/CameraDevice.h
+Argus/CameraProvider.h
+../external/argus/include/Argus/Argus/CameraProvider.h
+Argus/CaptureMetadata.h
+../external/argus/include/Argus/Argus/CaptureMetadata.h
+Argus/CaptureSession.h
+../external/argus/include/Argus/Argus/CaptureSession.h
+Argus/EGLImage.h
+../external/argus/include/Argus/Argus/EGLImage.h
+Argus/EGLStream.h
+../external/argus/include/Argus/Argus/EGLStream.h
+Argus/EGLSync.h
+../external/argus/include/Argus/Argus/EGLSync.h
+Argus/Event.h
+../external/argus/include/Argus/Argus/Event.h
+Argus/EventProvider.h
+../external/argus/include/Argus/Argus/EventProvider.h
+Argus/EventQueue.h
+../external/argus/include/Argus/Argus/EventQueue.h
+Argus/Request.h
+../external/argus/include/Argus/Argus/Request.h
+Argus/Settings.h
+../external/argus/include/Argus/Argus/Settings.h
+
+../external/argus/include/Argus/BufferStream.h
+
+../external/argus/include/Argus/CameraDevice.h
+
+../external/argus/include/Argus/CameraProvider.h
+
+../external/argus/include/Argus/CaptureMetadata.h
+
+../external/argus/include/Argus/CaptureSession.h
+
+../external/argus/include/Argus/EGLImage.h
+
+../external/argus/include/Argus/EGLStream.h
+
+../external/argus/include/Argus/EGLSync.h
+
+../external/argus/include/Argus/Event.h
+
+../external/argus/include/Argus/EventProvider.h
+
+../external/argus/include/Argus/EventQueue.h
+
+../external/argus/include/Argus/Ext/DolWdrSensorMode.h
+
+../external/argus/include/Argus/Ext/PwlWdrSensorMode.h
+
+../external/argus/include/Argus/Request.h
+
+../external/argus/include/Argus/Settings.h
+
+../external/argus/include/Argus/Stream.h
+
+../external/argus/include/Argus/Types.h
+stdint.h
+-
+vector
+-
+string
+-
+assert.h
+-
+EGL/egl.h
+-
+EGL/eglext.h
+-
+
+../external/argus/include/Argus/UUID.h
+stdint.h
+-
+cstring
+-
+
+../external/argus/include/EGL/egl.h
+EGL/eglplatform.h
+-
+KHR/khrplatform.h
+-
+EGL/eglplatform.h
+-
+
+../external/argus/include/EGL/eglext.h
+EGL/eglplatform.h
+-
+EGL/eglext_nv.h
+-
+
+../external/argus/include/EGL/eglext_nv.h
+
+../external/argus/include/EGL/eglplatform.h
+KHR/khrplatform.h
+-
+windows.h
+-
+wayland-client.h
+-
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+kernel/image.h
+-
+
+../external/argus/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.cpp
+ArgusHelpers.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+Argus/Ext/DolWdrSensorMode.h
+-
+Argus/Ext/PwlWdrSensorMode.h
+-
+stdio.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+Argus/Argus.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.cpp
+CommonOptions.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.h
+ArgusHelpers.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.h
+Options.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Options.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+stdio.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+list
+-
+IObserver.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Options.h
+vector
+-
+string
+-
+Value.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Value.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Validator.h
+stdlib.h
+-
+inttypes.h
+-
+assert.h
+-
+list
+-
+vector
+-
+string
+-
+sstream
+-
+Argus/Argus.h
+-
+Error.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+Observed.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+IObserver.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Value.h
+string
+-
+Observed.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+Validator.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Validator.h
+Error.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+

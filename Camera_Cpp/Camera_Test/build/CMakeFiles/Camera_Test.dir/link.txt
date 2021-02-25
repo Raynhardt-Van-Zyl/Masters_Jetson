@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Camera_Test.dir/main.cpp.o  -o Camera_Test   -L"/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus"  -Wl,-rpath,"/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus:" -lexternal/argus 

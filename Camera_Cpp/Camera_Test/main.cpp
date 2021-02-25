@@ -26,7 +26,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "ArgusHelpers.h"
+#include "library/ArgusHelpers.h"
 #include "CommonOptions.h"
 #include "Error.h"
 #include "EGLGlobal.h"

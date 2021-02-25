@@ -1,2 +1,0 @@
-/usr/bin/ar qc libarguscamerauicommon.a  CMakeFiles/arguscamerauicommon.dir/App.cpp.o CMakeFiles/arguscamerauicommon.dir/AppModuleGeneric.cpp.o
-/usr/bin/ranlib libarguscamerauicommon.a

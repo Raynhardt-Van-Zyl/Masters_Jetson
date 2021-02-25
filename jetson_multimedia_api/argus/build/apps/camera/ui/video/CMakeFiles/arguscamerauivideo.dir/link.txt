@@ -1,2 +1,0 @@
-/usr/bin/ar qc libarguscamerauivideo.a  CMakeFiles/arguscamerauivideo.dir/AppModuleVideo.cpp.o
-/usr/bin/ranlib libarguscamerauivideo.a

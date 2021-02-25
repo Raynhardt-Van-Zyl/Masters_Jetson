@@ -1,0 +1,86 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.cpp
+ArgusHelpers.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+Argus/Ext/DolWdrSensorMode.h
+-
+Argus/Ext/PwlWdrSensorMode.h
+-
+stdio.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+Library/Argus.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.cpp
+CommonOptions.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.h
+ArgusHelpers.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/ArgusHelpers.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/CommonOptions.h
+Options.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Options.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+stdio.h
+-
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+list
+-
+IObserver.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Options.h
+vector
+-
+string
+-
+Value.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Value.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Validator.h
+stdlib.h
+-
+inttypes.h
+-
+assert.h
+-
+list
+-
+vector
+-
+string
+-
+sstream
+-
+Argus/Argus.h
+-
+Error.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+Observed.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+IObserver.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/IObserver.h
+
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Value.h
+string
+-
+Observed.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Observed.h
+Validator.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Validator.h
+Error.h
+/mnt/c/Users/All Users/Documents/code/Masters_Jetson/Camera_Cpp/Camera_Test/external/argus/Library/Error.h
+

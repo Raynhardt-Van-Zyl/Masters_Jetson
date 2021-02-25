@@ -31,10 +31,12 @@
 #  ARGUS_LIBRARIES - The libraries needed to use Argus
 #  ARGUS_DEFINITIONS - Compiler switches required for using Argus
 
+cmake_minimum_required (VERSION 3.10)
+
 find_package(PkgConfig)
 
 find_path(ARGUS_INCLUDE_DIR Argus/Argus.h
-          HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../include)
+          HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
 find_library(ARGUS_LIBRARY NAMES nvargus
              HINTS /usr/lib/${CMAKE_LIBRARY_ARCHITECTURE}/tegra)
