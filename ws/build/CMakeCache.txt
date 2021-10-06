@@ -418,6 +418,9 @@ EGL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 EGL_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libEGL.so
 
+//Path to a file.
+EIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3
+
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
@@ -474,6 +477,9 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=2
+
+//The directory containing a CMake configuration file for Pangolin.
+Pangolin_DIR:PATH=Pangolin_DIR-NOTFOUND
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/build
@@ -785,6 +791,21 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+slam_ORB2_BINARY_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/build/slam_ORB2
+
+//Value Computed by CMake
+slam_ORB2_SOURCE_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/src/slam_ORB2
+
+//Value Computed by CMake
+slam_orb2_BINARY_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/build/slam_ORB2
+
+//Dependencies for the target
+slam_orb2_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_gapi;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;/home/ros/Documents/Masters_Jetson/ws/src/slam_ORB2/Thirdparty/DBoW2/lib/libDBoW2.so;general;/home/ros/Documents/Masters_Jetson/ws/src/slam_ORB2/Thirdparty/g2o/lib/libg2o.so;
+
+//Value Computed by CMake
+slam_orb2_SOURCE_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/src/slam_ORB2
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
@@ -924,7 +945,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -965,6 +986,10 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Test COMPILER_SUPPORTS_CXX0X
+COMPILER_SUPPORTS_CXX0X:INTERNAL=1
+//Test COMPILER_SUPPORTS_CXX11
+COMPILER_SUPPORTS_CXX11:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DEB
 CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_FREEBSD
@@ -1133,12 +1158,16 @@ Cairo_cairo_VERSION:INTERNAL=
 EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: EGL_LIBRARY
 EGL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: EIGEN3_INCLUDE_DIR
+EIGEN3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding Argus
 FIND_PACKAGE_MESSAGE_DETAILS_Argus:INTERNAL=[/usr/lib/aarch64-linux-gnu/tegra/libnvargus.so][/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include][v()]
 //Details about finding CUDA
 FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda-10.2][/usr/local/cuda-10.2/bin/nvcc][/usr/local/cuda-10.2/include][/usr/local/cuda-10.2/lib64/libcudart_static.a][v10.2()]
 //Details about finding EGL
 FIND_PACKAGE_MESSAGE_DETAILS_EGL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libEGL.so][/usr/include][v()]
+//Details about finding Eigen3
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[/usr/include/eigen3][TRUE][v(3.1.0)]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.1.1(4)]
 //Details about finding OpenGLES

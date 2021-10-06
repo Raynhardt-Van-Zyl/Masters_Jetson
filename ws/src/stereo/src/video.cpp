@@ -55,11 +55,11 @@ using namespace Argus;
  * PreviewConsumerThread and JPEGConsumerThread classes, located in the util folder.
  */
 
-static const uint32_t FRAMERATE = 15;
-static const Size2D<uint32_t> STREAM_SIZE(960, 540);
-static const Range<float> GAIN_RANGE(1, 44);
-static const Range<float> ISP_DIGITAL_GAIN_RANGE(1, 1);
-static const Range<uint64_t> EXPOSURE_TIME_RANGE(44000, 1000000);
+static const uint32_t FRAMERATE = 29.999999;
+static Size2D<uint32_t> STREAM_SIZE(1920, 1080);
+static Range<float> GAIN_RANGE(1, 16);
+static Range<float> ISP_DIGITAL_GAIN_RANGE(1, 1);
+static Range<uint64_t> EXPOSURE_TIME_RANGE(13000, 683709000);
 
 ros::Publisher left_image_pub;
 ros::Publisher left_camera_info_pub;
@@ -248,11 +248,30 @@ static bool execute() {
     ORIGINATE_ERROR("Must have at least 2 sensors available");
   }
 
-  std::vector <CameraDevice*> lrCameras;
-  lrCameras.push_back(cameraDevices[0]);
-  lrCameras.push_back(cameraDevices[1]);
+  std::vector <CameraDevice*> sensors;
+  sensors.push_back(cameraDevices[0]);
+  sensors.push_back(cameraDevices[1]);
 
-  UniqueObj<CaptureSession> captureSession(iCameraProvider->createCaptureSession(lrCameras));
+  // Sensor settings
+  ICameraProperties *sensorDeviceProperties = interface_cast<ICameraProperties>(cameraDevices[0]);
+  std::vector<Argus::SensorMode*> SensorModes;
+  sensorDeviceProperties->getBasicSensorModes(&SensorModes);
+  if (!SensorModes.size())
+  {
+      ORIGINATE_ERROR("Failed to get valid JPEG sensor mode list.");
+  }
+  ISensorMode *iSensorMode = interface_cast<ISensorMode>(SensorModes[2]);
+  if (!iSensorMode)
+      ORIGINATE_ERROR("Failed to get the sensor mode.");
+    
+  STREAM_SIZE = iSensorMode->getResolution();
+  GAIN_RANGE = iSensorMode->getAnalogGainRange();
+  EXPOSURE_TIME_RANGE = iSensorMode->getExposureTimeRange();
+
+  //End of sensor settings
+
+
+  UniqueObj<CaptureSession> captureSession(iCameraProvider->createCaptureSession(sensors));
   ICaptureSession *iCaptureSession = interface_cast<ICaptureSession>(captureSession);
   if (!iCaptureSession) {
     ORIGINATE_ERROR("Failed to get capture session interface");
@@ -274,7 +293,7 @@ static bool execute() {
   iEGLStreamSettings->setMetadataEnable(true);
 
   PRODUCER_PRINT("Creating left stream.\n");
-  iStreamSettings->setCameraDevice(lrCameras[0]);
+  iStreamSettings->setCameraDevice(sensors[0]);
   UniqueObj<OutputStream> streamLeft(iCaptureSession->createOutputStream(streamSettings.get()));
   IEGLOutputStream *iStreamLeft = interface_cast<IEGLOutputStream>(streamLeft);
   if (!iStreamLeft) {
@@ -282,7 +301,7 @@ static bool execute() {
   }
 
   PRODUCER_PRINT("Creating right stream.\n");
-  iStreamSettings->setCameraDevice(lrCameras[1]);
+  iStreamSettings->setCameraDevice(sensors[1]);
   UniqueObj<OutputStream> streamRight(iCaptureSession->createOutputStream(streamSettings.get()));
   IEGLOutputStream *iStreamRight = interface_cast<IEGLOutputStream>(streamRight);
   if (!iStreamRight) {
@@ -310,6 +329,7 @@ static bool execute() {
 	  interface_cast<IAutoControlSettings>(iRequest->getAutoControlSettings());
   iAutoControlSettings->setIspDigitalGainRange(ISP_DIGITAL_GAIN_RANGE);
 
+
   PRODUCER_PRINT("Launching disparity checking consumer\n");
   StereoConsumer disparityConsumer(iStreamLeft, iStreamRight);
   PROPAGATE_ERROR(disparityConsumer.initialize());
@@ -320,7 +340,13 @@ static bool execute() {
     ORIGINATE_ERROR("Failed to start repeat capture request for preview");
   }
 
-  ros::spin();
+  for(int i = 0; i< 10; i++){
+
+    std::cout << "Loop rerun number:" << i << std::endl;
+
+    ros::Rate(1).sleep();
+    ros::spinOnce();
+  }
 
   iCaptureSession->stopRepeat();
   iCaptureSession->waitForIdle();
@@ -329,7 +355,6 @@ static bool execute() {
   iStreamLeft->disconnect();
   iStreamRight->disconnect();
 
-  PROPAGATE_ERROR(disparityConsumer.shutdown());
   cameraProvider.reset();
   PROPAGATE_ERROR(g_display.cleanup());
 

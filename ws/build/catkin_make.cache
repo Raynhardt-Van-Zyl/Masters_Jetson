@@ -1,2 +1,2 @@
-stereo
+slam_ORB2:stereo
 -DCATKIN_DEVEL_PREFIX=/home/ros/Documents/Masters_Jetson/ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros/Documents/Masters_Jetson/ws/install -G Unix Makefiles

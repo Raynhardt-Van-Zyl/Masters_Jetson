@@ -307,6 +307,97 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named mono_euroc
+
+# Build rule for target.
+mono_euroc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mono_euroc
+.PHONY : mono_euroc
+
+# fast build rule for target.
+mono_euroc/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/mono_euroc.dir/build.make slam_ORB2/CMakeFiles/mono_euroc.dir/build
+.PHONY : mono_euroc/fast
+
+#=============================================================================
+# Target rules for targets named rgbd_tum
+
+# Build rule for target.
+rgbd_tum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rgbd_tum
+.PHONY : rgbd_tum
+
+# fast build rule for target.
+rgbd_tum/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/rgbd_tum.dir/build.make slam_ORB2/CMakeFiles/rgbd_tum.dir/build
+.PHONY : rgbd_tum/fast
+
+#=============================================================================
+# Target rules for targets named slam_orb2
+
+# Build rule for target.
+slam_orb2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slam_orb2
+.PHONY : slam_orb2
+
+# fast build rule for target.
+slam_orb2/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/slam_orb2.dir/build.make slam_ORB2/CMakeFiles/slam_orb2.dir/build
+.PHONY : slam_orb2/fast
+
+#=============================================================================
+# Target rules for targets named stereo_kitti
+
+# Build rule for target.
+stereo_kitti: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_kitti
+.PHONY : stereo_kitti
+
+# fast build rule for target.
+stereo_kitti/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/stereo_kitti.dir/build.make slam_ORB2/CMakeFiles/stereo_kitti.dir/build
+.PHONY : stereo_kitti/fast
+
+#=============================================================================
+# Target rules for targets named stereo_euroc
+
+# Build rule for target.
+stereo_euroc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_euroc
+.PHONY : stereo_euroc
+
+# fast build rule for target.
+stereo_euroc/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/stereo_euroc.dir/build.make slam_ORB2/CMakeFiles/stereo_euroc.dir/build
+.PHONY : stereo_euroc/fast
+
+#=============================================================================
+# Target rules for targets named mono_tum
+
+# Build rule for target.
+mono_tum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mono_tum
+.PHONY : mono_tum
+
+# fast build rule for target.
+mono_tum/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/mono_tum.dir/build.make slam_ORB2/CMakeFiles/mono_tum.dir/build
+.PHONY : mono_tum/fast
+
+#=============================================================================
+# Target rules for targets named mono_kitti
+
+# Build rule for target.
+mono_kitti: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mono_kitti
+.PHONY : mono_kitti
+
+# fast build rule for target.
+mono_kitti/fast:
+	$(MAKE) -f slam_ORB2/CMakeFiles/mono_kitti.dir/build.make slam_ORB2/CMakeFiles/mono_kitti.dir/build
+.PHONY : mono_kitti/fast
+
+#=============================================================================
 # Target rules for targets named stereo
 
 # Build rule for target.
@@ -551,6 +642,13 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... mono_euroc"
+	@echo "... rgbd_tum"
+	@echo "... slam_orb2"
+	@echo "... stereo_kitti"
+	@echo "... stereo_euroc"
+	@echo "... mono_tum"
+	@echo "... mono_kitti"
 	@echo "... stereo"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
