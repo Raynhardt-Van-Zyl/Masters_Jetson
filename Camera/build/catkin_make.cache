@@ -1,0 +1,2 @@
+Camera
+-DCATKIN_DEVEL_PREFIX=/home/ros/Documents/Masters_Jetson/Camera/devel -DCMAKE_INSTALL_PREFIX=/home/ros/Documents/Masters_Jetson/Camera/install -G Unix Makefiles

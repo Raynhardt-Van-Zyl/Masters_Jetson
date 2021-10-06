@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include  -g   -o CMakeFiles/stereo.dir/src/video.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/ArgusHelpers.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/ArgusHelpers.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/ArgusHelpers.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/CUDAHelper.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/CUDAHelper.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/CUDAHelper.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/EGLGlobal.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/EGLGlobal.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/EGLGlobal.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/Observed.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/Observed.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/Observed.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/Thread.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/Thread.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/Thread.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/WindowBase.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/WindowBase.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/WindowBase.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/GuiElement.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/gtk/GuiElement.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/gtk/GuiElement.cpp"
+},
+{
+  "directory": "/home/ros/Documents/Masters_Jetson/ws/build/stereo",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"stereo\\\" -Dutils_lib_EXPORTS -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include -I/usr/local/cuda-10.2/include  -g -fPIC   -o CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/Window.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/gtk/Window.cpp",
+  "file": "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils/gtk/Window.cpp"
+}
+]

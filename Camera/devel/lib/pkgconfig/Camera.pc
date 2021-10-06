@@ -1,0 +1,8 @@
+prefix=/home/ros/Documents/Masters_Jetson/Camera/devel
+
+Name: Camera
+Description: Description of Camera
+Version: 0.0.0
+Cflags: -I/home/ros/Documents/Masters_Jetson/Camera/src/Camera/include
+Libs: -L${prefix}/lib 
+Requires: cv_bridge roscpp
