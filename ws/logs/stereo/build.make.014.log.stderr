@@ -1,0 +1,10 @@
+[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:[m[K In function ‘[01m[Kbool ArgusSamples::execute()[m[K’:
+[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:262:60:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<Argus::CameraDevice*>::size_type {aka long unsigned int}[m[K’ [[01;35m[K-Wformat=[m[K]
+   printf("CAMERA DEVICES COUNT: %d\n", [32m[KcameraDevices.size()[m[K[01;35m[K)[m[K;
+                                        [32m[K~~~~~~~~~~~~~~~~~~~~[m[K[01;35m[K^[m[K
+[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:285:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Argus::ISensorMode[m[K’ has no member named ‘[01m[KSTREAM_SIZE[m[K’
+   [01;31m[KSTREAM_SIZE[m[K = iSensorMode->getResolution();
+   [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/stereo.dir/src/video.cpp.o] Error 1
+make[1]: *** [CMakeFiles/stereo.dir/all] Error 2
+make: *** [all] Error 2

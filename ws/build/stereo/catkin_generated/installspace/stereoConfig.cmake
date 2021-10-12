@@ -68,7 +68,7 @@ set(stereo_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(stereo_SOURCE_PREFIX /home/ros/Documents/Masters_Jetson/ws/src/stereo)
-  set(stereo_DEVEL_PREFIX /home/ros/Documents/Masters_Jetson/ws/devel)
+  set(stereo_DEVEL_PREFIX /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo)
   set(stereo_INSTALL_PREFIX "")
   set(stereo_PREFIX ${stereo_DEVEL_PREFIX})
 else()

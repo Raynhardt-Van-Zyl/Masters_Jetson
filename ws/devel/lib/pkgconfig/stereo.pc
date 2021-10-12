@@ -1,8 +1,1 @@
-prefix=/home/ros/Documents/Masters_Jetson/ws/devel
-
-Name: stereo
-Description: Description of stereo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/pkgconfig/stereo.pc

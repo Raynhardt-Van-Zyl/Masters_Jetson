@@ -1,0 +1,34 @@
+[  1%] Built target orb_slam2_ros_gencfg
+[ 11%] Built target DBoW2
+[ 11%] Built target std_msgs_generate_messages_nodejs
+[ 52%] Built target g2o
+[ 52%] Built target _orb_slam2_ros_generate_messages_check_deps_SaveMap
+[ 52%] Built target std_msgs_generate_messages_py
+[ 52%] Built target std_msgs_generate_messages_lisp
+[ 52%] Built target std_msgs_generate_messages_eus
+[ 52%] Built target std_msgs_generate_messages_cpp
+[ 54%] Built target orb_slam2_ros_generate_messages_nodejs
+[ 56%] Built target orb_slam2_ros_generate_messages_py
+[ 59%] Built target orb_slam2_ros_generate_messages_eus
+[ 62%] Built target orb_slam2_ros_generate_messages_cpp
+[ 62%] Built target orb_slam2_ros_generate_messages_lisp
+[ 65%] Built target orb_slam2_ros_generate_messages
+[ 87%] Built target orb_slam2_ros
+[35m[1mScanning dependencies of target orb_slam2_ros_mono[0m
+[35m[1mScanning dependencies of target orb_slam2_ros_rgbd[0m
+[35m[1mScanning dependencies of target orb_slam2_ros_stereo[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/Node.cc.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/Node.cc.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros_mono.dir/ros/src/Node.cc.o[0m
+[ 94%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_stereo[0m
+[ 94%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_mono[0m
+[ 95%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_rgbd[0m
+/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/lib/liborb_slam2_ros.so, may conflict with libopencv_core.so.3.2
+/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
+/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/lib/liborb_slam2_ros.so, may conflict with libopencv_core.so.3.2
+/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
+/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/lib/liborb_slam2_ros.so, may conflict with libopencv_core.so.3.2
+/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
+[ 97%] Built target orb_slam2_ros_mono
+[ 98%] Built target orb_slam2_ros_stereo
+[100%] Built target orb_slam2_ros_rgbd

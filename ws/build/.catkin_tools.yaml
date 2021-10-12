@@ -1,0 +1,6 @@
+devel_space: /home/ros/Documents/Masters_Jetson/ws/devel
+install: false
+install_space: /home/ros/Documents/Masters_Jetson/ws/install
+profile: default
+source_space: /home/ros/Documents/Masters_Jetson/ws/src
+workspace: /home/ros/Documents/Masters_Jetson/ws

@@ -223,10 +223,26 @@ bool CudaFrameAcquire::publish(bool leftFrame) {
   output.header.stamp = ros::Time::now();
   sensor_msgs::fillImage(output, sensor_msgs::image_encodings::BGR8, m_frame.height, m_frame.width, 3 * m_frame.width, (void*) oBuffer);
 
+  sensor_msgs::CameraInfoPtr lcam(new sensor_msgs::CameraInfo());
+    lcam->height = 480;
+    lcam->width = 640;
+    lcam->distortion_model = "plumb_bob";
+    lcam->D = { -0.361976, 0.110510, 0.001014, 0.000505, 0.000000};
+    lcam->K = {438.783367, 0.000000, 305.593336, 0.000000, 437.302876, 243.738352, 0.000000, 0.000000, 1.000000};
+    lcam->R = {0.999978, 0.002789, -0.006046, -0.002816, 0.999986, -0.004401, 0.006034, 0.004417, 0.999972};
+    lcam->P = {393.653800, 0.000000, 322.797939, 0.000000, 0.000000, 393.653800, 241.090902, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000};
+    lcam->header.stamp = output.header.stamp;
+    lcam->header.frame_id = output.header.frame_id;
+
   if (leftFrame) {
     left_image_pub.publish(output);
+    
+    left_camera_info_pub.publish(lcam);
+    
   } else {
     right_image_pub.publish(output);
+
+    right_camera_info_pub.publish(lcam);
   }
   return true;
 }
@@ -263,7 +279,7 @@ static bool execute() {
   ISensorMode *iSensorMode = interface_cast<ISensorMode>(SensorModes[2]);
   if (!iSensorMode)
       ORIGINATE_ERROR("Failed to get the sensor mode.");
-    
+
   STREAM_SIZE = iSensorMode->getResolution();
   GAIN_RANGE = iSensorMode->getAnalogGainRange();
   EXPOSURE_TIME_RANGE = iSensorMode->getExposureTimeRange();
@@ -340,7 +356,7 @@ static bool execute() {
     ORIGINATE_ERROR("Failed to start repeat capture request for preview");
   }
 
-  for(int i = 0; i< 10; i++){
+  for(int i = 0; i< 100; i++){
 
     std::cout << "Loop rerun number:" << i << std::endl;
 
@@ -372,10 +388,10 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "argus_stereo_node");
     ros::NodeHandle nh;
 
-    left_image_pub = nh.advertise<sensor_msgs::Image>("/camera/left/image_raw", 1);
-    left_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("/camera/left/camera_info", 1);
-    right_image_pub = nh.advertise<sensor_msgs::Image>("/camera/right/image", 1);
-    right_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("/camera/right/camera_info", 1);
+    left_image_pub = nh.advertise<sensor_msgs::Image>("image_left/image_color_rect", 1);
+    left_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("image_left/camera_info", 1);
+    right_image_pub = nh.advertise<sensor_msgs::Image>("image_right/image_color_rect", 1);
+    right_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("image_right/camera_info", 1);
     
     if (!ArgusSamples::execute()) {
         delete[] oBuffer;

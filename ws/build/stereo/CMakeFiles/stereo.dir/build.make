@@ -43,204 +43,204 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/Documents/Masters_Jetson/ws/src
+CMAKE_SOURCE_DIR = /home/ros/Documents/Masters_Jetson/ws/src/stereo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/Documents/Masters_Jetson/ws/build
+CMAKE_BINARY_DIR = /home/ros/Documents/Masters_Jetson/ws/build/stereo
 
 # Include any dependencies generated for this target.
-include stereo/CMakeFiles/stereo.dir/depend.make
+include CMakeFiles/stereo.dir/depend.make
 
 # Include the progress variables for this target.
-include stereo/CMakeFiles/stereo.dir/progress.make
+include CMakeFiles/stereo.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include stereo/CMakeFiles/stereo.dir/flags.make
+include CMakeFiles/stereo.dir/flags.make
 
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.cu
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/_G_config.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/floatn-common.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/floatn.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/fp-fast.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/fp-logb.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/iscanonical.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libc-header-start.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libio.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/long-double.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdint-intn.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/sysmacros.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/FILE.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__FILE.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/clock_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/locale_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/time_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/timer_t.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/uintn-identity.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/uio_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/c++config.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/cpu_defines.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/os_defines.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/alloca.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/assert.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/concept_check.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/cpp_type_traits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/cxxabi_init_exception.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception_defines.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception_ptr.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/hash_bytes.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/move.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/nested_exception.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/std_abs.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/cmath
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/cstdlib
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/exception
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/ext/type_traits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/math.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/new
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/stdlib.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/type_traits
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/typeinfo
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/endian.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/features.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/limits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/linux/limits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/math.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdc-predef.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdint.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdio.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdlib.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/string.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/strings.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/time.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include-fixed/limits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include-fixed/syslimits.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stdarg.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stddef.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stdint.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/driver_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/library_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_types.h
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o.Debug.cmake
-stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o"
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.cu
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/_G_config.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/floatn-common.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/floatn.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/fp-fast.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/fp-logb.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/iscanonical.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libc-header-start.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libio.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/long-double.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdint-intn.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/sysmacros.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/FILE.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__FILE.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/clock_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/locale_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/time_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/types/timer_t.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/uintn-identity.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/uio_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/c++config.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/cpu_defines.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/c++/7/bits/os_defines.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/alloca.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/assert.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/concept_check.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/cpp_type_traits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/cxxabi_init_exception.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception_defines.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/exception_ptr.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/hash_bytes.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/move.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/nested_exception.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/bits/std_abs.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/cmath
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/cstdlib
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/exception
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/ext/type_traits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/math.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/new
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/stdlib.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/type_traits
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/c++/7/typeinfo
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/endian.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/features.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/limits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/linux/limits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/math.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdc-predef.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdint.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdio.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/stdlib.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/string.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/strings.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/include/time.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include-fixed/limits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include-fixed/syslimits.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stdarg.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stddef.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/lib/gcc/aarch64-linux-gnu/7/include/stdint.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/device_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/library_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /usr/local/cuda-10.2/include/vector_types.h
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o.cmake
+CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/convert.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o"
 	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src && /usr/bin/cmake -E make_directory /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/.
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Debug -D generated_file:STRING=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/./stereo_generated_convert.cu.o -D generated_cubin_file:STRING=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/./stereo_generated_convert.cu.o.cubin.txt -P /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o.Debug.cmake
+	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/./stereo_generated_convert.cu.o -D generated_cubin_file:STRING=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/./stereo_generated_convert.cu.o.cubin.txt -P /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o.cmake
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.o: stereo/CMakeFiles/stereo.dir/flags.make
-stereo/CMakeFiles/stereo.dir/src/video.cpp.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object stereo/CMakeFiles/stereo.dir/src/video.cpp.o"
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stereo.dir/src/video.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp
+CMakeFiles/stereo.dir/src/video.cpp.o: CMakeFiles/stereo.dir/flags.make
+CMakeFiles/stereo.dir/src/video.cpp.o: /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/stereo.dir/src/video.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stereo.dir/src/video.cpp.o -c /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.i: cmake_force
+CMakeFiles/stereo.dir/src/video.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stereo.dir/src/video.cpp.i"
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp > CMakeFiles/stereo.dir/src/video.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp > CMakeFiles/stereo.dir/src/video.cpp.i
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.s: cmake_force
+CMakeFiles/stereo.dir/src/video.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stereo.dir/src/video.cpp.s"
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp -o CMakeFiles/stereo.dir/src/video.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp -o CMakeFiles/stereo.dir/src/video.cpp.s
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.o.requires:
+CMakeFiles/stereo.dir/src/video.cpp.o.requires:
 
-.PHONY : stereo/CMakeFiles/stereo.dir/src/video.cpp.o.requires
+.PHONY : CMakeFiles/stereo.dir/src/video.cpp.o.requires
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.o.provides: stereo/CMakeFiles/stereo.dir/src/video.cpp.o.requires
-	$(MAKE) -f stereo/CMakeFiles/stereo.dir/build.make stereo/CMakeFiles/stereo.dir/src/video.cpp.o.provides.build
-.PHONY : stereo/CMakeFiles/stereo.dir/src/video.cpp.o.provides
+CMakeFiles/stereo.dir/src/video.cpp.o.provides: CMakeFiles/stereo.dir/src/video.cpp.o.requires
+	$(MAKE) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/src/video.cpp.o.provides.build
+.PHONY : CMakeFiles/stereo.dir/src/video.cpp.o.provides
 
-stereo/CMakeFiles/stereo.dir/src/video.cpp.o.provides.build: stereo/CMakeFiles/stereo.dir/src/video.cpp.o
+CMakeFiles/stereo.dir/src/video.cpp.o.provides.build: CMakeFiles/stereo.dir/src/video.cpp.o
 
 
 # Object files for target stereo
@@ -251,70 +251,70 @@ stereo_OBJECTS = \
 stereo_EXTERNAL_OBJECTS = \
 "/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o"
 
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: stereo/CMakeFiles/stereo.dir/src/video.cpp.o
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: stereo/CMakeFiles/stereo.dir/build.make
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/local/cuda-10.2/lib64/libcudart_static.a
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/librt.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librostime.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libcpp_common.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/tegra/libnvargus_socketclient.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/local/cuda-10.2/lib64/libcudart_static.a
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/librt.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /home/ros/Documents/Masters_Jetson/ws/devel/lib/libutils_lib.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_regex.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/librostime.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /opt/ros/melodic/lib/libcpp_common.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libpthread.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/tegra/libnvargus_socketclient.so
-/home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo: stereo/CMakeFiles/stereo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo"
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stereo.dir/link.txt --verbose=$(VERBOSE)
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: CMakeFiles/stereo.dir/src/video.cpp.o
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: CMakeFiles/stereo.dir/build.make
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/local/cuda-10.2/lib64/libcudart_static.a
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/librt.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librostime.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libcpp_common.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/tegra/libnvargus_socketclient.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/local/cuda-10.2/lib64/libcudart_static.a
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/librt.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: libutils_lib.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/librostime.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /opt/ros/melodic/lib/libcpp_common.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: /usr/lib/aarch64-linux-gnu/tegra/libnvargus_socketclient.so
+/home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo: CMakeFiles/stereo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stereo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-stereo/CMakeFiles/stereo.dir/build: /home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo
+CMakeFiles/stereo.dir/build: /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo
 
-.PHONY : stereo/CMakeFiles/stereo.dir/build
+.PHONY : CMakeFiles/stereo.dir/build
 
-stereo/CMakeFiles/stereo.dir/requires: stereo/CMakeFiles/stereo.dir/src/video.cpp.o.requires
+CMakeFiles/stereo.dir/requires: CMakeFiles/stereo.dir/src/video.cpp.o.requires
 
-.PHONY : stereo/CMakeFiles/stereo.dir/requires
+.PHONY : CMakeFiles/stereo.dir/requires
 
-stereo/CMakeFiles/stereo.dir/clean:
-	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && $(CMAKE_COMMAND) -P CMakeFiles/stereo.dir/cmake_clean.cmake
-.PHONY : stereo/CMakeFiles/stereo.dir/clean
+CMakeFiles/stereo.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/stereo.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/stereo.dir/clean
 
-stereo/CMakeFiles/stereo.dir/depend: stereo/CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o
-	cd /home/ros/Documents/Masters_Jetson/ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/Documents/Masters_Jetson/ws/src /home/ros/Documents/Masters_Jetson/ws/src/stereo /home/ros/Documents/Masters_Jetson/ws/build /home/ros/Documents/Masters_Jetson/ws/build/stereo /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : stereo/CMakeFiles/stereo.dir/depend
+CMakeFiles/stereo.dir/depend: CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o
+	cd /home/ros/Documents/Masters_Jetson/ws/build/stereo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/Documents/Masters_Jetson/ws/src/stereo /home/ros/Documents/Masters_Jetson/ws/src/stereo /home/ros/Documents/Masters_Jetson/ws/build/stereo /home/ros/Documents/Masters_Jetson/ws/build/stereo /home/ros/Documents/Masters_Jetson/ws/build/stereo/CMakeFiles/stereo.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/stereo.dir/depend
 

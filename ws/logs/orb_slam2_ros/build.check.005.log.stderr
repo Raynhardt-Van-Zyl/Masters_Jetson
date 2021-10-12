@@ -1,0 +1,8 @@
+[31m[1mCMake Error[0m at /opt/ros/melodic/share/catkin/cmake/custom_install.cmake:13 (_install):
+  _install TARGETS given target "orb_slam2_ros_mono" which does not exist in
+  this directory.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:142 (install)
+
+
+make: *** [cmake_check_build_system] Error 1
