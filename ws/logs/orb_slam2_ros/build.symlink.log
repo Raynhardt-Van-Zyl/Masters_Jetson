@@ -1,29 +1,27 @@
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/cmake/orb_slam2_rosConfig-version.cmake, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_rosConfig-version.cmake)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-paths.cmake, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-paths.cmake)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-extras.cmake, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-extras.cmake)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/cmake/orb_slam2_rosConfig.cmake, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_rosConfig.cmake)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.dox, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.dox)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/docs/dynamic_reconfigureConfig-usage.dox, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig-usage.dox)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.wikidoc, /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.wikidoc)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/gennodejs/ros/orb_slam2_ros/_index.js, /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/_index.js)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/gennodejs/ros/orb_slam2_ros/srv/SaveMap.js, /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/srv/SaveMap.js)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/gennodejs/ros/orb_slam2_ros/srv/_index.js, /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/srv/_index.js)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/roseus/ros/orb_slam2_ros/manifest.l, /home/ros/Documents/Masters_Jetson/ws/devel/share/roseus/ros/orb_slam2_ros/manifest.l)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/roseus/ros/orb_slam2_ros/srv/SaveMap.l, /home/ros/Documents/Masters_Jetson/ws/devel/share/roseus/ros/orb_slam2_ros/srv/SaveMap.l)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/orb_slam2_ros-srv.asd, /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/orb_slam2_ros-srv.asd)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/SaveMap.lisp, /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/SaveMap.lisp)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/_package.lisp, /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/_package.lisp)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp, /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/pkgconfig/orb_slam2_ros.pc, /home/ros/Documents/Masters_Jetson/ws/devel/lib/pkgconfig/orb_slam2_ros.pc)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_stereo, /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_stereo)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_rgbd, /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_rgbd)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_mono, /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_mono)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/__init__.py, /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/__init__.py)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/srv/_SaveMap.py, /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/_SaveMap.py)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/srv/__init__.py, /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/__init__.py)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/cfg/__init__.py, /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/cfg/__init__.py)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/cfg/dynamic_reconfigureConfig.py, /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/cfg/dynamic_reconfigureConfig.py)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/SaveMapRequest.h, /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMapRequest.h)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/SaveMapResponse.h, /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMapResponse.h)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/dynamic_reconfigureConfig.h, /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/dynamic_reconfigureConfig.h)
-Linked: (/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/SaveMap.h, /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMap.h)
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_rosConfig-version.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-paths.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_ros-msg-extras.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/cmake/orb_slam2_rosConfig.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.dox
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig-usage.dox
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/orb_slam2_ros/docs/dynamic_reconfigureConfig.wikidoc
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/_index.js
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/srv/SaveMap.js
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/gennodejs/ros/orb_slam2_ros/srv/_index.js
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/roseus/ros/orb_slam2_ros/manifest.l
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/roseus/ros/orb_slam2_ros/srv/SaveMap.l
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/orb_slam2_ros-srv.asd
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/SaveMap.lisp
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/_package.lisp
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/pkgconfig/orb_slam2_ros.pc
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_stereo
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/__init__.py
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/_SaveMap.py
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/__init__.py
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/cfg/__init__.py
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/cfg/dynamic_reconfigureConfig.py
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMapRequest.h
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMapResponse.h
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/dynamic_reconfigureConfig.h
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/include/orb_slam2_ros/SaveMap.h

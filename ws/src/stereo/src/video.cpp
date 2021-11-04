@@ -28,6 +28,7 @@
 
 #include <csignal>
 #include <ros/ros.h>
+#include <std_msgs/Bool.h>
 #include <sensor_msgs/Image.h>
 #include <sensor_msgs/CameraInfo.h>
 #include <sensor_msgs/image_encodings.h>
@@ -37,6 +38,10 @@
 #include <EGLStream/EGLStream.h>
 #include <cuda.h>
 #include <cudaEGL.h>
+
+#include  <opencv2/core/core.hpp>
+#include  <opencv2/highgui/highgui.hpp>
+#include  <opencv2/features2d/features2d.hpp>
 
 #include "ArgusHelpers.h"
 #include "CUDAHelper.h"
@@ -65,7 +70,8 @@ ros::Publisher left_image_pub;
 ros::Publisher left_camera_info_pub;
 ros::Publisher right_image_pub;
 ros::Publisher right_camera_info_pub;
-uint8_t* oBuffer = new uint8_t[3 * STREAM_SIZE.width() * STREAM_SIZE.height()];
+
+uint8_t *oBuffer = new uint8_t[3 * STREAM_SIZE.width() * STREAM_SIZE.height()];
 
 namespace ArgusSamples
 {
@@ -85,16 +91,34 @@ class StereoConsumer : public Thread {
 	                    , m_cudaContext(0) {}
     ~StereoConsumer() {}
 
+
+
   private:
     virtual bool threadInitialize();
     virtual bool threadExecute();
     virtual bool threadShutdown();
+
+    
 
     IEGLOutputStream *m_leftStream;
     IEGLOutputStream *m_rightStream;
     CUeglStreamConnection m_cuStreamLeft;
     CUeglStreamConnection m_cuStreamRight;
     CUcontext m_cudaContext;
+};
+
+class StereoCreator {
+  public:
+    explicit StereoCreator();
+    ~StereoCreator();
+
+  private:
+
+    ICaptureSession *iCaptureSession;
+    IEGLOutputStream *iStreamLeft;
+    IEGLOutputStream *iStreamRight;
+    UniqueObj<CameraProvider> cameraProvider;
+
 };
 
 class CudaFrameAcquire {
@@ -197,6 +221,7 @@ CudaFrameAcquire::~CudaFrameAcquire() {
 }
 
 bool CudaFrameAcquire::publish(bool leftFrame) {
+
   CUDA_RESOURCE_DESC cudaResourceDesc;
   memset(&cudaResourceDesc, 0, sizeof(cudaResourceDesc));
   cudaResourceDesc.resType = CU_RESOURCE_TYPE_ARRAY;
@@ -222,38 +247,37 @@ bool CudaFrameAcquire::publish(bool leftFrame) {
   sensor_msgs::Image output;
   output.header.stamp = ros::Time::now();
   sensor_msgs::fillImage(output, sensor_msgs::image_encodings::BGR8, m_frame.height, m_frame.width, 3 * m_frame.width, (void*) oBuffer);
-
+  //init 
   sensor_msgs::CameraInfoPtr lcam(new sensor_msgs::CameraInfo());
-    lcam->height = 480;
-    lcam->width = 640;
-    lcam->distortion_model = "plumb_bob";
-    lcam->D = { -0.361976, 0.110510, 0.001014, 0.000505, 0.000000};
-    lcam->K = {438.783367, 0.000000, 305.593336, 0.000000, 437.302876, 243.738352, 0.000000, 0.000000, 1.000000};
-    lcam->R = {0.999978, 0.002789, -0.006046, -0.002816, 0.999986, -0.004401, 0.006034, 0.004417, 0.999972};
-    lcam->P = {393.653800, 0.000000, 322.797939, 0.000000, 0.000000, 393.653800, 241.090902, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000};
-    lcam->header.stamp = output.header.stamp;
-    lcam->header.frame_id = output.header.frame_id;
+  // put value
+  lcam->height = 1080;
+  lcam->width = 1920;
+  lcam->distortion_model = "plumb_bob";
+  lcam->D = { -0.361976, 0.110510, 0.001014, 0.000505, 0.000000};
+  lcam->K = {438.783367, 0.000000, 305.593336, 0.000000, 437.302876, 243.738352, 0.000000, 0.000000, 1.000000};
+  lcam->R = {0.999978, 0.002789, -0.006046, -0.002816, 0.999986, -0.004401, 0.006034, 0.004417, 0.999972};
+  lcam->P = {393.653800, 0.000000, 322.797939, 0.000000, 0.000000, 393.653800, 241.090902, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000};
+  lcam->header.stamp = output.header.stamp;
+  lcam->header.frame_id = output.header.frame_id;
 
   if (leftFrame) {
     left_image_pub.publish(output);
-    
-    left_camera_info_pub.publish(lcam);
-    
   } else {
     right_image_pub.publish(output);
-
-    right_camera_info_pub.publish(lcam);
   }
+  left_camera_info_pub.publish(lcam);
   return true;
 }
 
-static bool execute() {
-  PROPAGATE_ERROR(g_display.initialize());
+StereoCreator::StereoCreator() {
 
-  UniqueObj<CameraProvider> cameraProvider(CameraProvider::create());
+  printf("Started \n");
+  g_display.initialize();
+
+  cameraProvider.reset(CameraProvider::create());
   ICameraProvider *iCameraProvider = interface_cast<ICameraProvider>(cameraProvider);
   if (!iCameraProvider) {
-    ORIGINATE_ERROR("Failed to get ICameraProvider interface");
+    printf("Failed to get ICameraProvider interface");
   }
   printf("Argus Version: %s\n", iCameraProvider->getVersion().c_str());
 
@@ -261,12 +285,13 @@ static bool execute() {
   iCameraProvider->getCameraDevices(&cameraDevices);
   printf("CAMERA DEVICES COUNT: %d\n", cameraDevices.size());
   if (cameraDevices.size() < 2) {
-    ORIGINATE_ERROR("Must have at least 2 sensors available");
+    printf("Must have at least 2 sensors available");
   }
 
   std::vector <CameraDevice*> sensors;
   sensors.push_back(cameraDevices[0]);
   sensors.push_back(cameraDevices[1]);
+  printf("Succesfully added sensors \n");
 
   // Sensor settings
   ICameraProperties *sensorDeviceProperties = interface_cast<ICameraProperties>(cameraDevices[0]);
@@ -274,24 +299,26 @@ static bool execute() {
   sensorDeviceProperties->getBasicSensorModes(&SensorModes);
   if (!SensorModes.size())
   {
-      ORIGINATE_ERROR("Failed to get valid JPEG sensor mode list.");
+      printf("Failed to get valid JPEG sensor mode list.");
   }
   ISensorMode *iSensorMode = interface_cast<ISensorMode>(SensorModes[2]);
   if (!iSensorMode)
-      ORIGINATE_ERROR("Failed to get the sensor mode.");
-
+      printf("Failed to get the sensor mode.");
+    
   STREAM_SIZE = iSensorMode->getResolution();
   GAIN_RANGE = iSensorMode->getAnalogGainRange();
   EXPOSURE_TIME_RANGE = iSensorMode->getExposureTimeRange();
-
+  printf("Succesfully got sensor settings \n");
   //End of sensor settings
 
-
-  UniqueObj<CaptureSession> captureSession(iCameraProvider->createCaptureSession(sensors));
-  ICaptureSession *iCaptureSession = interface_cast<ICaptureSession>(captureSession);
+  //! Capture session
+  Argus::Status *status;
+  UniqueObj<CaptureSession> captureSession(iCameraProvider->createCaptureSession(sensors, status));
+  iCaptureSession = interface_cast<ICaptureSession>(captureSession);
   if (!iCaptureSession) {
-    ORIGINATE_ERROR("Failed to get capture session interface");
+    printf("Failed to get capture session interface \n");
   }
+  printf("succesfully created capture session interface \n");
 
   UniqueObj<OutputStreamSettings> streamSettings(
       iCaptureSession->createOutputStreamSettings(STREAM_TYPE_EGL));
@@ -300,34 +327,36 @@ static bool execute() {
   IEGLOutputStreamSettings *iEGLStreamSettings =
       interface_cast<IEGLOutputStreamSettings>(streamSettings);
   if (!iStreamSettings || !iEGLStreamSettings) {
-    ORIGINATE_ERROR("Failed to create OutputStreamSettings");
+    printf("Failed to create OutputStreamSettings");
   }
+  
   iEGLStreamSettings->setPixelFormat(PIXEL_FMT_YCbCr_420_888);
   iEGLStreamSettings->setResolution(STREAM_SIZE);
   iEGLStreamSettings->setEGLDisplay(g_display.get());
   iEGLStreamSettings->setMode(EGL_STREAM_MODE_MAILBOX);
   iEGLStreamSettings->setMetadataEnable(true);
 
-  PRODUCER_PRINT("Creating left stream.\n");
+  printf("Succesfully created stream settings \n");
+
   iStreamSettings->setCameraDevice(sensors[0]);
   UniqueObj<OutputStream> streamLeft(iCaptureSession->createOutputStream(streamSettings.get()));
-  IEGLOutputStream *iStreamLeft = interface_cast<IEGLOutputStream>(streamLeft);
+  iStreamLeft = interface_cast<IEGLOutputStream>(streamLeft);
   if (!iStreamLeft) {
-    ORIGINATE_ERROR("Failed to create left stream");
+    printf("Failed to create left stream");
   }
-
-  PRODUCER_PRINT("Creating right stream.\n");
+  printf("Succesfully added left stream \n");
   iStreamSettings->setCameraDevice(sensors[1]);
   UniqueObj<OutputStream> streamRight(iCaptureSession->createOutputStream(streamSettings.get()));
-  IEGLOutputStream *iStreamRight = interface_cast<IEGLOutputStream>(streamRight);
+  iStreamRight = interface_cast<IEGLOutputStream>(streamRight);
   if (!iStreamRight) {
-    ORIGINATE_ERROR("Failed to create right stream");
+    printf("Failed to create right stream");
   }
+  printf("Succesfully added right stream\n");
 
   UniqueObj<Request> request(iCaptureSession->createRequest());
   IRequest *iRequest = interface_cast<IRequest>(request);
   if (!iRequest) {
-    ORIGINATE_ERROR("Failed to create Request");
+    printf("Failed to create Request");
   }
 
   iRequest->enableOutputStream(streamLeft.get());
@@ -335,7 +364,7 @@ static bool execute() {
 
   ISourceSettings *iSourceSettings = interface_cast<ISourceSettings>(request);
   if (!iSourceSettings) {
-    ORIGINATE_ERROR("Failed to get source settings request interface");
+    printf("Failed to get source settings request interface");
   }
   iSourceSettings->setFrameDurationRange(Range<uint64_t>(1e9 / FRAMERATE));
   iSourceSettings->setExposureTimeRange(EXPOSURE_TIME_RANGE);
@@ -348,22 +377,17 @@ static bool execute() {
 
   PRODUCER_PRINT("Launching disparity checking consumer\n");
   StereoConsumer disparityConsumer(iStreamLeft, iStreamRight);
-  PROPAGATE_ERROR(disparityConsumer.initialize());
-  PROPAGATE_ERROR(disparityConsumer.waitRunning());
+  disparityConsumer.initialize();
+  disparityConsumer.waitRunning();
 
   PRODUCER_PRINT("Starting repeat capture requests.\n");
   if (iCaptureSession->repeat(request.get()) != STATUS_OK) {
-    ORIGINATE_ERROR("Failed to start repeat capture request for preview");
+    printf("Failed to start repeat capture request for preview");
   }
 
-  for(int i = 0; i< 100; i++){
+}
 
-    std::cout << "Loop rerun number:" << i << std::endl;
-
-    ros::Rate(1).sleep();
-    ros::spinOnce();
-  }
-
+StereoCreator::~StereoCreator(){
   iCaptureSession->stopRepeat();
   iCaptureSession->waitForIdle();
 
@@ -372,31 +396,27 @@ static bool execute() {
   iStreamRight->disconnect();
 
   cameraProvider.reset();
-  PROPAGATE_ERROR(g_display.cleanup());
+  g_display.cleanup();
 
   PRODUCER_PRINT("Done -- exiting.\n");
   ros::shutdown();
-  
-  return true;
 }
+
 
 
 }; // namespace ArgusSamples
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "argus_stereo_node");
-    ros::NodeHandle nh;
+  ros::init(argc, argv, "argus_stereo_node");
+  ros::NodeHandle nh;
 
-    left_image_pub = nh.advertise<sensor_msgs::Image>("image_left/image_color_rect", 1);
-    left_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("image_left/camera_info", 1);
-    right_image_pub = nh.advertise<sensor_msgs::Image>("image_right/image_color_rect", 1);
-    right_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("image_right/camera_info", 1);
-    
-    if (!ArgusSamples::execute()) {
-        delete[] oBuffer;
-        return EXIT_FAILURE;
-    }
-    delete[] oBuffer;
-    return EXIT_SUCCESS;
+  left_image_pub = nh.advertise<sensor_msgs::Image>("/camera/left/image", 1);
+  left_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("/camera/left/camera_info", 1);
+  right_image_pub = nh.advertise<sensor_msgs::Image>("/camera/right/image", 1);
+  right_camera_info_pub = nh.advertise<sensor_msgs::CameraInfo>("/camera/right/camera_info", 1);
+
+  ArgusSamples::StereoCreator stereo;
+  ros::spin();
+  return 0;
 }

@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/utils_lib.dir/external/argus/samples/utils/WindowBase.cpp.o"
   "CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/GuiElement.cpp.o"
   "CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/Window.cpp.o"
-  "libutils_lib.pdb"
-  "libutils_lib.so"
+  "../devel/lib/libutils_lib.pdb"
+  "../devel/lib/libutils_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

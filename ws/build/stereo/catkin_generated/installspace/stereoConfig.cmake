@@ -68,13 +68,13 @@ set(stereo_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(stereo_SOURCE_PREFIX /home/ros/Documents/Masters_Jetson/ws/src/stereo)
-  set(stereo_DEVEL_PREFIX /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo)
+  set(stereo_DEVEL_PREFIX /home/ros/Documents/Masters_Jetson/ws/build/devel)
   set(stereo_INSTALL_PREFIX "")
   set(stereo_PREFIX ${stereo_DEVEL_PREFIX})
 else()
   set(stereo_SOURCE_PREFIX "")
   set(stereo_DEVEL_PREFIX "")
-  set(stereo_INSTALL_PREFIX /home/ros/Documents/Masters_Jetson/ws/install)
+  set(stereo_INSTALL_PREFIX /usr/local)
   set(stereo_PREFIX ${stereo_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ros/Documents/Masters_Jetson/ws/install/lib;/home/ros/Documents/Masters_Jetson/ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /usr/local/lib;/home/ros/Documents/Masters_Jetson/ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

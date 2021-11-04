@@ -440,6 +440,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/opencv4
+
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
@@ -565,7 +568,7 @@ stereo_BINARY_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/build/stereo
 stereo_SOURCE_DIR:STATIC=/home/ros/Documents/Masters_Jetson/ws/src/stereo
 
 //Dependencies for the target
-utils_lib_LIB_DEPENDS:STATIC=general;gtk-3;general;gdk-3;general;pangocairo-1.0;general;pango-1.0;general;atk-1.0;general;cairo-gobject;general;cairo;general;gdk_pixbuf-2.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;
+utils_lib_LIB_DEPENDS:STATIC=general;gtk-3;general;gdk-3;general;pangocairo-1.0;general;pango-1.0;general;atk-1.0;general;cairo-gobject;general;cairo;general;gdk_pixbuf-2.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_gapi;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -859,6 +862,8 @@ CUDA_run_nvcc:INTERNAL=/usr/share/cmake-3.10/Modules/FindCUDA/run_nvcc.cmake
 FIND_PACKAGE_MESSAGE_DETAILS_Argus:INTERNAL=[/usr/lib/aarch64-linux-gnu/tegra/libnvargus.so][/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include][v()]
 //Details about finding CUDA
 FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda-10.2][/usr/local/cuda-10.2/bin/nvcc][/usr/local/cuda-10.2/include][/usr/local/cuda-10.2/lib64/libcudart_static.a][v10.2()]
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.1.1(4)]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp

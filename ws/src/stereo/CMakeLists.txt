@@ -18,6 +18,7 @@ set(ARGUS_DIR "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/"
 set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/cmake")
 find_package(CUDA REQUIRED)
 find_package(Argus REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 
 message(STATUS "foo include dir: ${CUDA_DIR}")
 
@@ -37,6 +38,7 @@ add_library(utils_lib
 
 target_link_libraries(utils_lib
   ${GTK3_LIBRARIES}
+  ${OpenCV_LIBS}
 )
 
 target_include_directories(utils_lib
@@ -45,6 +47,7 @@ target_include_directories(utils_lib
   ${ARGUS_DIR}/../include
   PRIVATE
   ${GTK3_INCLUDE_DIRS}
+  
 )
 
 set(SOURCES src/video.cpp src/convert.cu)
@@ -53,6 +56,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${ARGUS_INCLUDE_DIR}
   ${CUDA_INCLUDE_DIRS}
+  
 )
 
 catkin_package()
@@ -62,6 +66,7 @@ target_link_libraries(${PROJECT_NAME}
   ${catkin_LIBRARIES}
   ${ARGUS_LIBRARIES}
   ${CUDA_LIBRARIES}
+  ${OpenCV_LIBS}
   utils_lib
   cuda
 )

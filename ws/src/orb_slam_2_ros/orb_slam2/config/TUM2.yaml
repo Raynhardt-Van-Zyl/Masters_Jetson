@@ -10,13 +10,13 @@ Camera.fy: 539.2
 Camera.cx: 320.1
 Camera.cy: 247.6
 
-Camera.k1: 0.0
-Camera.k2: 0.0
-Camera.p1: 0.0
-Camera.p2: 0.0
+Camera.k1: -0.09097914397716522
+Camera.k2: 0.06503549218177795
+Camera.p1: 0.000849052332341671
+Camera.p2: 0.001785792293958366
 
-Camera.width: 640
-Camera.height: 480
+Camera.width: 1920
+Camera.height: 1080
 
 # Camera frames per second 
 Camera.fps: 30.0

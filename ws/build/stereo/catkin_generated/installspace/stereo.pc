@@ -1,4 +1,4 @@
-prefix=/home/ros/Documents/Masters_Jetson/ws/install
+prefix=/usr/local
 
 Name: stereo
 Description: Description of stereo

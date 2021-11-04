@@ -1,19 +1,104 @@
-[  1%] Built target orb_slam2_ros_gencfg
-[ 11%] Built target DBoW2
-[ 11%] Built target std_msgs_generate_messages_nodejs
-[ 52%] Built target g2o
-[ 52%] Built target _orb_slam2_ros_generate_messages_check_deps_SaveMap
-[ 52%] Built target std_msgs_generate_messages_py
-[ 52%] Built target std_msgs_generate_messages_lisp
-[ 52%] Built target std_msgs_generate_messages_eus
-[ 52%] Built target std_msgs_generate_messages_cpp
-[ 54%] Built target orb_slam2_ros_generate_messages_nodejs
-[ 56%] Built target orb_slam2_ros_generate_messages_py
-[ 59%] Built target orb_slam2_ros_generate_messages_eus
-[ 61%] Built target orb_slam2_ros_generate_messages_lisp
-[ 62%] Built target orb_slam2_ros_generate_messages_cpp
-[ 87%] Built target orb_slam2_ros
-[ 87%] Built target orb_slam2_ros_generate_messages
-[ 91%] Built target orb_slam2_ros_stereo
-[ 95%] Built target orb_slam2_ros_rgbd
-[100%] Built target orb_slam2_ros_mono
+[35m[1mScanning dependencies of target g2o[0m
+[35m[1mScanning dependencies of target orb_slam2_ros_gencfg[0m
+[35m[1mScanning dependencies of target DBoW2[0m
+[  1%] [34m[1mGenerating dynamic reconfigure files from ros/config/dynamic_reconfigure.cfg: /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/dynamic_reconfigureConfig.h /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/cfg/dynamic_reconfigureConfig.py[0m
+[  3%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DBoW2/BowVector.cpp.o[0m
+Generating reconfiguration files for dynamic_reconfigure in orb_slam2_ros
+Wrote header file in /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/include/orb_slam2_ros/dynamic_reconfigureConfig.h
+[  3%] Built target orb_slam2_ros_gencfg
+[35m[1mScanning dependencies of target _orb_slam2_ros_generate_messages_check_deps_SaveMap[0m
+[  4%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/types/types_sba.cpp.o[0m
+[  4%] Built target _orb_slam2_ros_generate_messages_check_deps_SaveMap
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  4%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  4%] Built target std_msgs_generate_messages_py
+[  6%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DBoW2/FORB.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DBoW2/FeatureVector.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DBoW2/ScoringObject.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DUtils/Random.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/DBoW2.dir/orb_slam2/Thirdparty/DBoW2/DUtils/Timestamp.cpp.o[0m
+[ 16%] [32m[1mLinking CXX shared library /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/Thirdparty/DBoW2/lib/libDBoW2.so[0m
+[ 16%] Built target DBoW2
+[ 18%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/hyper_graph.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/matrix_structure.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/batch_stats.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/parameter.cpp.o[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[ 25%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[ 25%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/cache.cpp.o[0m
+[ 27%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages_nodejs[0m
+[ 28%] [34m[1mGenerating Javascript code from orb_slam2_ros/SaveMap.srv[0m
+[ 28%] Built target orb_slam2_ros_generate_messages_nodejs
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages_py[0m
+[ 30%] [34m[1mGenerating Python code from SRV orb_slam2_ros/SaveMap[0m
+[ 31%] [34m[1mGenerating Python srv __init__.py for orb_slam2_ros[0m
+[ 31%] Built target orb_slam2_ros_generate_messages_py
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages_eus[0m
+[ 33%] [34m[1mGenerating EusLisp code from orb_slam2_ros/SaveMap.srv[0m
+[ 34%] [34m[1mGenerating EusLisp manifest code for orb_slam2_ros[0m
+[ 34%] Built target orb_slam2_ros_generate_messages_eus
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages_lisp[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/optimizable_graph.cpp.o[0m
+[ 37%] [34m[1mGenerating Lisp code from orb_slam2_ros/SaveMap.srv[0m
+[ 37%] Built target orb_slam2_ros_generate_messages_lisp
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages_cpp[0m
+[ 39%] [34m[1mGenerating C++ code from orb_slam2_ros/SaveMap.srv[0m
+[ 39%] Built target orb_slam2_ros_generate_messages_cpp
+[35m[1mScanning dependencies of target orb_slam2_ros_generate_messages[0m
+[ 39%] Built target orb_slam2_ros_generate_messages
+[ 40%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/solver.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm_factory.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/estimate_propagator.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/factory.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/sparse_optimizer.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/hyper_dijkstra.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/parameter_container.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/jacobian_workspace.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/robust_kernel.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/robust_kernel_factory.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/core/robust_kernel_impl.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/stuff/timeutil.cpp.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/stuff/os_specific.c.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/stuff/string_tools.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/g2o.dir/orb_slam2/Thirdparty/g2o/g2o/stuff/property.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/Thirdparty/g2o/lib/libg2o.so[0m
+[ 68%] Built target g2o
+[35m[1mScanning dependencies of target orb_slam2_ros[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Tracking.cc.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/LoopClosing.cc.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/System.cc.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/LocalMapping.cc.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/ORBextractor.cc.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/ORBmatcher.cc.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/FrameDrawer.cc.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Converter.cc.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/MapPoint.cc.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/KeyFrame.cc.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Map.cc.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Optimizer.cc.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/PnPsolver.cc.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Frame.cc.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/KeyFrameDatabase.cc.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Sim3Solver.cc.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Initializer.cc.o[0m
+[ 95%] [32m[1mLinking CXX shared library /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/lib/liborb_slam2_ros.so[0m
+[ 95%] Built target orb_slam2_ros
+[35m[1mScanning dependencies of target orb_slam2_ros_stereo[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/StereoNode.cc.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/Node.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_stereo[0m
+/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/ros/Documents/Masters_Jetson/ws/src/orb_slam_2_ros/orb_slam2/lib/liborb_slam2_ros.so, may conflict with libopencv_core.so.3.2
+/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
+[100%] Built target orb_slam2_ros_stereo

@@ -55,6 +55,8 @@
         "memory": "cpp",
         "ratio": "cpp",
         "thread": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp"
     }
 }

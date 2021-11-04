@@ -1,9 +1,20 @@
+[35m[1mScanning dependencies of target utils_lib[0m
+[  8%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/ArgusHelpers.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/EGLGlobal.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/CUDAHelper.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/Observed.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/Thread.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/GuiElement.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/gtk/Window.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/utils_lib.dir/external/argus/samples/utils/WindowBase.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libutils_lib.so[0m
 [ 75%] Built target utils_lib
+[ 83%] [34m[1mBuilding NVCC (Device) object CMakeFiles/stereo.dir/src/stereo_generated_convert.cu.o[0m
 [35m[1mScanning dependencies of target stereo[0m
-[ 83%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/video.cpp.o[0m
-[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:[m[K In function ‘[01m[Kbool ArgusSamples::execute()[m[K’:
-[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:262:60:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<Argus::CameraDevice*>::size_type {aka long unsigned int}[m[K’ [[01;35m[K-Wformat=[m[K]
+[ 91%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/video.cpp.o[0m
+[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:[m[K In constructor ‘[01m[KArgusSamples::StereoCreator::StereoCreator()[m[K’:
+[01m[K/home/ros/Documents/Masters_Jetson/ws/src/stereo/src/video.cpp:286:60:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<Argus::CameraDevice*>::size_type {aka long unsigned int}[m[K’ [[01;35m[K-Wformat=[m[K]
    printf("CAMERA DEVICES COUNT: %d\n", [32m[KcameraDevices.size()[m[K[01;35m[K)[m[K;
                                         [32m[K~~~~~~~~~~~~~~~~~~~~[m[K[01;35m[K^[m[K
-[ 91%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo[0m
+[100%] [32m[1mLinking CXX executable /home/ros/Documents/Masters_Jetson/ws/devel/.private/stereo/lib/stereo/stereo[0m
 [100%] Built target stereo

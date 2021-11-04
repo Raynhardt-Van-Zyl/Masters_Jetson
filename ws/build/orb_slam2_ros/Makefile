@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/ros/Documents/Masters_Jetson/ws/build/orb_slam2_ros
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -134,6 +122,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -244,6 +244,19 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 sensor_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -584,32 +597,6 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named doxygen
-
-# Build rule for target.
-doxygen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doxygen
-.PHONY : doxygen
-
-# fast build rule for target.
-doxygen/fast:
-	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-.PHONY : doxygen/fast
-
-#=============================================================================
-# Target rules for targets named orb_slam2_ros_rgbd
-
-# Build rule for target.
-orb_slam2_ros_rgbd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 orb_slam2_ros_rgbd
-.PHONY : orb_slam2_ros_rgbd
-
-# fast build rule for target.
-orb_slam2_ros_rgbd/fast:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/build
-.PHONY : orb_slam2_ros_rgbd/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -803,6 +790,19 @@ tf2_msgs_generate_messages_eus: cmake_check_build_system
 tf2_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named orb_slam2_ros_genlisp
+
+# Build rule for target.
+orb_slam2_ros_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 orb_slam2_ros_genlisp
+.PHONY : orb_slam2_ros_genlisp
+
+# fast build rule for target.
+orb_slam2_ros_genlisp/fast:
+	$(MAKE) -f CMakeFiles/orb_slam2_ros_genlisp.dir/build.make CMakeFiles/orb_slam2_ros_genlisp.dir/build
+.PHONY : orb_slam2_ros_genlisp/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
@@ -1102,32 +1102,6 @@ orb_slam2_ros: cmake_check_build_system
 orb_slam2_ros/fast:
 	$(MAKE) -f CMakeFiles/orb_slam2_ros.dir/build.make CMakeFiles/orb_slam2_ros.dir/build
 .PHONY : orb_slam2_ros/fast
-
-#=============================================================================
-# Target rules for targets named orb_slam2_ros_genlisp
-
-# Build rule for target.
-orb_slam2_ros_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 orb_slam2_ros_genlisp
-.PHONY : orb_slam2_ros_genlisp
-
-# fast build rule for target.
-orb_slam2_ros_genlisp/fast:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_genlisp.dir/build.make CMakeFiles/orb_slam2_ros_genlisp.dir/build
-.PHONY : orb_slam2_ros_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named orb_slam2_ros_mono
-
-# Build rule for target.
-orb_slam2_ros_mono: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 orb_slam2_ros_mono
-.PHONY : orb_slam2_ros_mono
-
-# fast build rule for target.
-orb_slam2_ros_mono/fast:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/build
-.PHONY : orb_slam2_ros_mono/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -2598,42 +2572,13 @@ orb_slam2/src/Tracking.cc.s:
 	$(MAKE) -f CMakeFiles/orb_slam2_ros.dir/build.make CMakeFiles/orb_slam2_ros.dir/orb_slam2/src/Tracking.cc.s
 .PHONY : orb_slam2/src/Tracking.cc.s
 
-ros/src/MonoNode.o: ros/src/MonoNode.cc.o
-
-.PHONY : ros/src/MonoNode.o
-
-# target to build an object file
-ros/src/MonoNode.cc.o:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/MonoNode.cc.o
-.PHONY : ros/src/MonoNode.cc.o
-
-ros/src/MonoNode.i: ros/src/MonoNode.cc.i
-
-.PHONY : ros/src/MonoNode.i
-
-# target to preprocess a source file
-ros/src/MonoNode.cc.i:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/MonoNode.cc.i
-.PHONY : ros/src/MonoNode.cc.i
-
-ros/src/MonoNode.s: ros/src/MonoNode.cc.s
-
-.PHONY : ros/src/MonoNode.s
-
-# target to generate assembly for a file
-ros/src/MonoNode.cc.s:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/MonoNode.cc.s
-.PHONY : ros/src/MonoNode.cc.s
-
 ros/src/Node.o: ros/src/Node.cc.o
 
 .PHONY : ros/src/Node.o
 
 # target to build an object file
 ros/src/Node.cc.o:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/Node.cc.o
 	$(MAKE) -f CMakeFiles/orb_slam2_ros_stereo.dir/build.make CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/Node.cc.o
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/Node.cc.o
 .PHONY : ros/src/Node.cc.o
 
 ros/src/Node.i: ros/src/Node.cc.i
@@ -2642,9 +2587,7 @@ ros/src/Node.i: ros/src/Node.cc.i
 
 # target to preprocess a source file
 ros/src/Node.cc.i:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/Node.cc.i
 	$(MAKE) -f CMakeFiles/orb_slam2_ros_stereo.dir/build.make CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/Node.cc.i
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/Node.cc.i
 .PHONY : ros/src/Node.cc.i
 
 ros/src/Node.s: ros/src/Node.cc.s
@@ -2653,37 +2596,8 @@ ros/src/Node.s: ros/src/Node.cc.s
 
 # target to generate assembly for a file
 ros/src/Node.cc.s:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/Node.cc.s
 	$(MAKE) -f CMakeFiles/orb_slam2_ros_stereo.dir/build.make CMakeFiles/orb_slam2_ros_stereo.dir/ros/src/Node.cc.s
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_mono.dir/build.make CMakeFiles/orb_slam2_ros_mono.dir/ros/src/Node.cc.s
 .PHONY : ros/src/Node.cc.s
-
-ros/src/RGBDNode.o: ros/src/RGBDNode.cc.o
-
-.PHONY : ros/src/RGBDNode.o
-
-# target to build an object file
-ros/src/RGBDNode.cc.o:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/RGBDNode.cc.o
-.PHONY : ros/src/RGBDNode.cc.o
-
-ros/src/RGBDNode.i: ros/src/RGBDNode.cc.i
-
-.PHONY : ros/src/RGBDNode.i
-
-# target to preprocess a source file
-ros/src/RGBDNode.cc.i:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/RGBDNode.cc.i
-.PHONY : ros/src/RGBDNode.cc.i
-
-ros/src/RGBDNode.s: ros/src/RGBDNode.cc.s
-
-.PHONY : ros/src/RGBDNode.s
-
-# target to generate assembly for a file
-ros/src/RGBDNode.cc.s:
-	$(MAKE) -f CMakeFiles/orb_slam2_ros_rgbd.dir/build.make CMakeFiles/orb_slam2_ros_rgbd.dir/ros/src/RGBDNode.cc.s
-.PHONY : ros/src/RGBDNode.cc.s
 
 ros/src/StereoNode.o: ros/src/StereoNode.cc.o
 
@@ -2718,7 +2632,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -2726,6 +2639,7 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... doxygen"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
@@ -2752,8 +2666,6 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... doxygen"
-	@echo "... orb_slam2_ros_rgbd"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
@@ -2770,6 +2682,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... orb_slam2_ros_genlisp"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
@@ -2796,10 +2709,9 @@ help:
 	@echo "... orb_slam2_ros_generate_messages_nodejs"
 	@echo "... list_install_components"
 	@echo "... orb_slam2_ros"
-	@echo "... orb_slam2_ros_genlisp"
-	@echo "... orb_slam2_ros_mono"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... edit_cache"
+	@echo "... install"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
@@ -2960,15 +2872,9 @@ help:
 	@echo "... orb_slam2/src/Tracking.o"
 	@echo "... orb_slam2/src/Tracking.i"
 	@echo "... orb_slam2/src/Tracking.s"
-	@echo "... ros/src/MonoNode.o"
-	@echo "... ros/src/MonoNode.i"
-	@echo "... ros/src/MonoNode.s"
 	@echo "... ros/src/Node.o"
 	@echo "... ros/src/Node.i"
 	@echo "... ros/src/Node.s"
-	@echo "... ros/src/RGBDNode.o"
-	@echo "... ros/src/RGBDNode.i"
-	@echo "... ros/src/RGBDNode.s"
 	@echo "... ros/src/StereoNode.o"
 	@echo "... ros/src/StereoNode.i"
 	@echo "... ros/src/StereoNode.s"

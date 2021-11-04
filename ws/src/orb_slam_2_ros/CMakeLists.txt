@@ -31,15 +31,7 @@ message_generation
 )
 
 find_package(OpenCV 4.0 QUIET)
-if(NOT OpenCV_FOUND)
-   find_package(OpenCV 3.0 QUIET)
-   if(NOT OpenCV_FOUND)
-      find_package(OpenCV 2.4.3 QUIET)
-      if(NOT OpenCV_FOUND)
-         message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
-     endif()
-   endif()
-endif()
+message(${OpenCV_VERSION})
 
 find_package(Eigen3 3.1.0 REQUIRED)
 
@@ -128,16 +120,6 @@ if (NOT BOOST_SERIALIZATION)
 endif()
 target_link_libraries(${PROJECT_NAME} ${BOOST_SERIALIZATION})
 
-add_executable (${PROJECT_NAME}_mono
-ros/src/MonoNode.cc
-ros/src/Node.cc
-)
-add_dependencies (${PROJECT_NAME}_mono ${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
-
-target_link_libraries(${PROJECT_NAME}_mono
-${LIBS_ROS}
-)
-
 add_executable (${PROJECT_NAME}_stereo
 ros/src/StereoNode.cc
 ros/src/Node.cc
@@ -148,17 +130,7 @@ target_link_libraries(${PROJECT_NAME}_stereo
 ${LIBS_ROS}
 )
 
-add_executable (${PROJECT_NAME}_rgbd
-ros/src/RGBDNode.cc
-ros/src/Node.cc
-)
-add_dependencies (${PROJECT_NAME}_rgbd ${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
-
-target_link_libraries(${PROJECT_NAME}_rgbd
-${LIBS_ROS}
-)
-
-install(TARGETS ${PROJECT_NAME}_mono ${PROJECT_NAME}_stereo ${PROJECT_NAME}_rgbd
+install(TARGETS ${PROJECT_NAME}_stereo 
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

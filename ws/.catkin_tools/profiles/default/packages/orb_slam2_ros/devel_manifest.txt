@@ -18,8 +18,6 @@ orb_slam_2_ros
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp /home/ros/Documents/Masters_Jetson/ws/devel/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/pkgconfig/orb_slam2_ros.pc /home/ros/Documents/Masters_Jetson/ws/devel/lib/pkgconfig/orb_slam2_ros.pc
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_stereo /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_stereo
-/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_rgbd /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_rgbd
-/home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/orb_slam2_ros/orb_slam2_ros_mono /home/ros/Documents/Masters_Jetson/ws/devel/lib/orb_slam2_ros/orb_slam2_ros_mono
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/__init__.py /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/__init__.py
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/srv/_SaveMap.py /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/_SaveMap.py
 /home/ros/Documents/Masters_Jetson/ws/devel/.private/orb_slam2_ros/lib/python2.7/dist-packages/orb_slam2_ros/srv/__init__.py /home/ros/Documents/Masters_Jetson/ws/devel/lib/python2.7/dist-packages/orb_slam2_ros/srv/__init__.py

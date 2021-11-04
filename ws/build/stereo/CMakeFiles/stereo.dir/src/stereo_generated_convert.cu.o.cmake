@@ -79,7 +79,7 @@ set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64) # list
-set(CUDA_NVCC_INCLUDE_DIRS "/usr/local/cuda-10.2/include;/opt/ros/melodic/include;/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include;/usr/local/cuda-10.2/include;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus//samples/utils;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus//../include") # list (needs to be in quotes to handle spaces properly).
+set(CUDA_NVCC_INCLUDE_DIRS "/usr/local/cuda-10.2/include;/opt/ros/melodic/include;/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include;/usr/local/cuda-10.2/include;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/usr/include/opencv4;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus//samples/utils;/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus//../include") # list (needs to be in quotes to handle spaces properly).
 set(CUDA_NVCC_COMPILE_DEFINITIONS [==[ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME="stereo";ROSCONSOLE_BACKEND_LOG4CXX]==]) # list (needs to be in lua quotes see #16510 ).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list

@@ -21,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/include"
   "/usr/local/cuda-10.2/include"
+  "/usr/include/opencv4"
   "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/samples/utils"
   "/home/ros/Documents/Masters_Jetson/ws/src/stereo/external/argus/../include"
   )
