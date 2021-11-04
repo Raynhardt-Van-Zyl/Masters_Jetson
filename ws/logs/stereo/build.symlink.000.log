@@ -1,0 +1,4 @@
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/stereo/cmake/stereoConfig-version.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/share/stereo/cmake/stereoConfig.cmake
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/pkgconfig/stereo.pc
+Symlinking /home/ros/Documents/Masters_Jetson/ws/devel/lib/stereo/stereo
